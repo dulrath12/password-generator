@@ -14,6 +14,6 @@ Thanks to google, i have a working prototype that i wouldnt consider perfect as 
 
 ## Links to Project
 
-Repo: 
+Repo: (https://github.com/dulrath12/password-generator)
 
-Page:
+Page:(https://dulrath12.github.io/password-generator/)
