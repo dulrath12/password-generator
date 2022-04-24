@@ -27,9 +27,9 @@ function writePassword() {
 
   var passwordlength = window.prompt("How many Characters would you like? Must be between 8 - 128")
   if (passwordlength < 8 || passwordlength > 128) {
-    alert("Password needs to be between defined length. (8-128)")
-    writePassword()
+    alert("Password needs to be between defined length. (8-128)");
   }
+
   var lowercase = window.confirm("Do you want lowercase letters?")
   var uppercase = window.confirm("Do you want UPPERCASE letters?")
   var numbers = window.confirm("Do you want Numbers?")
@@ -63,8 +63,7 @@ function writePassword() {
     var password = generatePassword(characterAmount, includeCharacters, includeLowercase, includeUppercase, includeNumbers);
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-
-    console.log(password)
+    
 }
 
 
