@@ -12,6 +12,8 @@ var CHARACTER_CHAR_CODES = arrayfromLowtoHigh(33, 47).concat(
   arrayfromLowtoHigh(123, 126)
 )
 
+console.log(CHARACTER_CHAR_CODES)
+
 
 function arrayfromLowtoHigh(low, high){
   var array = []
@@ -20,6 +22,8 @@ function arrayfromLowtoHigh(low, high){
   }
   return array
 }
+
+console.log()
 
 
 // Write password to the #password input
@@ -46,14 +50,14 @@ function writePassword() {
   
 
     var charCodes = []
-    if (includeCharacters === true) charCodes = charCodes.concat(CHARACTER_CHAR_CODES)
-    if (includeLowercase === true) charCodes = charCodes.concat(LOWERCASE_CHAR_CODES)
-    if (includeNumbers === true) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
-    if (includeUppercase === true) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
+    if (includeCharacters === true) {charCodes = charCodes.concat(CHARACTER_CHAR_CODES)};
+    if (includeLowercase === true) {charCodes = charCodes.concat(LOWERCASE_CHAR_CODES)};
+    if (includeNumbers === true) {charCodes = charCodes.concat(NUMBER_CHAR_CODES)};
+    if (includeUppercase === true) {charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)};
     
     var passwordCharacters = []
     for (let i = 0; i < characterAmount; i++){
-      var characterCode = charCodes[Math.floor(Math.random() * characterAmount)]
+      var characterCode = charCodes[Math.floor(Math.random() * 84)]
       passwordCharacters.push(String.fromCharCode(characterCode))
     }
     return passwordCharacters.join('')
@@ -64,6 +68,7 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
     
+    console.log(password)
 }
 
 
