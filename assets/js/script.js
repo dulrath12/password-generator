@@ -23,8 +23,6 @@ function arrayfromLowtoHigh(low, high){
   return array
 }
 
-console.log()
-
 
 // Write password to the #password input
 function writePassword() {
@@ -57,7 +55,7 @@ function writePassword() {
     
     var passwordCharacters = []
     for (let i = 0; i < characterAmount; i++){
-      var characterCode = charCodes[Math.floor(Math.random() * 84)]
+      var characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
       passwordCharacters.push(String.fromCharCode(characterCode))
     }
     return passwordCharacters.join('')
@@ -68,7 +66,6 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
     
-    console.log(password)
 }
 
 
